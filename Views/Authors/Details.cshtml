@@ -1,0 +1,83 @@
+﻿@model MVCPractice.Models.Author
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Author</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AuthorName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AuthorName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FB_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FB_ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Twitter_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Twitter_ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContactNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContactNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShortBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShortBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AuthorImage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AuthorImage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AuthorID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
